@@ -7,7 +7,7 @@
 
 #include <math.h>
 const int photodiodePin = A1; // reading from photodiode
-const int servoPin = D6; //servo pin
+const int servoPin = D7; //servo pin
 int photodiodeValue, brightness;  //int for photodiodevalue , int for brightness
 const float OFFSET = 90; 
 const float AMP = 90;

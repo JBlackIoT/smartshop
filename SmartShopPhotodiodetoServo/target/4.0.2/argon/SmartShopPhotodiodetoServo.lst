@@ -220,7 +220,7 @@ void setup() {
    b40e2:	2300      	movs	r3, #0
    b40e4:	22b4      	movs	r2, #180	; 0xb4
    b40e6:	e9cd 3200 	strd	r3, r2, [sp]
-   b40ea:	2106      	movs	r1, #6
+   b40ea:	2107      	movs	r1, #7
    b40ec:	f44f 6316 	mov.w	r3, #2400	; 0x960
    b40f0:	f44f 7208 	mov.w	r2, #544	; 0x220
    b40f4:	4802      	ldr	r0, [pc, #8]	; (b4100 <setup+0x34>)
@@ -260,7 +260,7 @@ void loop() {
   
   analogWrite(servoPin, brightness);
    b4132:	6829      	ldr	r1, [r5, #0]
-   b4134:	2006      	movs	r0, #6
+   b4134:	2007      	movs	r0, #7
    b4136:	f000 ff61 	bl	b4ffc <_Z11analogWritetm>
 
   if (photodiodeValue < 4000) { // check if it is dark
